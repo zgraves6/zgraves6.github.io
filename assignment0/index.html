@@ -158,3 +158,140 @@
   </footer>
 </body>
 </html>
+
+/* styles.css */
+
+/* Import Google Fonts: Great Vibes for cursive (site name), and Lora for body text */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora&display=swap');
+
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Lora', serif; /* Elegant serif font for paragraphs and general text */
+  font-size: 18px;             /* Comfortable reading size */
+  line-height: 1.6;            /* Adequate spacing between lines */
+  color: #333333;              /* Dark gray for easy reading */
+  background-color: #fafafa;   /* Light, subtle background */
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Header Styles ===== */
+header {
+  background-color: #f8f4f0;  /* Soft warm background */
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Site name with cursive font */
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #a45c40;              /* Elegant warm brown */
+  margin: 0;
+}
+
+/* ===== Navigation Bar Styles ===== */
+nav {
+  background-color: #a45c40;  /* Matches header text color */
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;       /* Horizontal menu */
+  gap: 25px;                  /* Spacing between links */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fafafa;             /* Light color for contrast */
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #ffd6a5;             /* Light peach highlight on hover */
+  outline: none;
+}
+
+/* ===== Main Content Styles ===== */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+main p {
+  margin-bottom: 30px;
+}
+
+/* Floral divider placeholder style */
+.floral-divider {
+  width: 100%;
+  height: 10px;
+  background: url('floral-divider.png') center no-repeat;
+  background-size: contain;
+  margin: 30px 0;
+}
+
+/* ===== Gallery Styles ===== */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(164, 92, 64, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Footer Styles ===== */
+footer {
+  background-color: #f8f4f0;
+  padding: 20px 10px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+footer a {
+  color: #a45c40;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* ===== Responsive Text and Layout (Optional) ===== */
+/* Not required per instructions, but good practice */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
